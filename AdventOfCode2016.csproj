@@ -26,5 +26,28 @@
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Day1\" />
+    <Folder Include="Day2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Day1\Day1Input.txt" />
+    <None Include="packages.config" />
+    <None Include="Day2\Input.txt" />
+    <None Include="scratch.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Day1\Day1Tests.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Day1\Day1.cs" />
+    <Compile Include="Day2\Day2Tests.cs" />
+    <Compile Include="Day2\Day2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
