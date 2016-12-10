@@ -1,9 +1,23 @@
 {
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
-    "version": "0.1.0",
-    "command": "g++",
-    "isShellCommand": true,
-    "args": ["-g", "Day3.cpp"],
-    "showOutput": "always"
+        "version": "0.1.0",
+        "command": "g++",
+        "isShellCommand": true,
+        "tasks": [
+            {
+                "taskName": "build",
+                "suppressTaskName": true,
+                "args": ["-g", "Day3.cpp"],
+                "showOutput": "always",
+                "isBuildCommand": true
+            },
+            {
+                "args": ["-isystem", "/usr/local/include/googletest", "-pthread", "Day3Tests.cpp", "/usr/local/lib/libgtest.a", "-o", "your_test"],
+                "showOutput": "always",
+                "taskName": "test",
+                "suppressTaskName": true,
+                "isBuildCommand": true
+            }   
+        ]
 }
