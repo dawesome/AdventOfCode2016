@@ -13,7 +13,7 @@
                 "isBuildCommand": true
             },
             {
-                "args": ["-isystem", "/usr/local/include/googletest", "-pthread", "Day3Tests.cpp", "/usr/local/lib/libgtest.a", "-o", "your_test"],
+                "args": ["-isystem", "/usr/local/include/google/googletest/include", "-pthread", "Day3Tests.cpp", "/usr/local/lib/libgtest.a", "-o", "your_test"],
                 "showOutput": "always",
                 "taskName": "test",
                 "suppressTaskName": true,
